@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 3</title>
+    <link rel="stylesheet" href="/public/style.css">
+    <script src="https://kit.fontawesome.com/b456e09962.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="left-side">
+            <a href="/"><img src="/public/asset/logodu.png" alt=""></a>
+            <ul>
+                <li class="home"><a href="/">Home</a></li>
+                <li><a href="/my-project-add">My Project</a></li>
+            </ul>
+        </div>
+        <div class="right-side">
+            <a href="/contact-me">Contact Me</a>
+            </div>
+    </nav>
+
+          <div class="background">
+            <div class="container">
+                <div class="container-left">
+                    <div class="title">
+                        <h1>Hi Welcome to my hut</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                         Eaque veniam repellendus ut! Quidem, nisi, numquam voluptatibus 
+                         culpa qui veniam facilis quam quasi aspernatur distinctio optio 
+                         hic magnam enim. Veniam, minima!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                         Minus, fugit odit! Vitae dolore incidunt deserunt tenetur
+                          cupiditate reprehenderit, recusandae cum tempore suscipit 
+                        consectetur? Reiciendis aliquam quaerat cupiditate ipsa harum nulla.</p>
+                    </div>
+
+                    <div class="content">
+                        <div class="contact">
+                            <a href="https://web.whatsapp.com/"><button>Contact</button></a>
+                        </div>
+
+                        <div class="download">
+                            <h3>Download CV
+                                <a href="asset/CV David Siregar-Computer Science.pdf" download="w3chool">
+                                <img src="/public/asset/unduh.png" alt="" style="width: 25px; position: absolute; "> 
+                                </a> 
+                                <!-- <img src="../Day 1/unduh.png" alt="" style="width: 25px; position: absolute; ">  -->
+                            </h3>
+                        </div>
+                    </div>
+                    
+                    <div class="social-media">
+                       <a href="https://www.linkedin.com/in/david-siregar-920035165/"> <i class="fa-brands fa-linkedin fa-2x" ></i></a>
+                        <a href="https:www.facebook.com"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                        <a href="https:www.instagram.com"><i class="fa-brands fa-instagram-square fa-2x"></i></a>
+                        <a href="https:www.twitter.com"><i class="fa-brands fa-twitter-square fa-2x"></i></a>
+                    </div>
+                </div>
+
+                <div class="container-right">
+                    <div class="profile" >
+                        <img src="public/asset/man-g159ca711c_1920.png" alt="man">
+                        <table class="table">    
+                            <h2>David Siregar</h2>
+                            <h4>Fullstack Developer</h4>
+                         </table>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+            </div>
+
+
+  <div class="blog">
+        <h1>My Project</h1>
+       
+        <div class="content-list" id="content-list">
+           <!-- 1 -->
+          <div class="content-list-item" >
+            
+            <div class="foto">
+              <img src="/public/asset/samsung.webp" alt="samsung" />
+            </div>
+  
+            <div class="blog-content">
+            <div class="title">
+              <h1 onclick="renderBlogDetail()"><a href="/my-project-detail"  target="_blank">Mobile Apps </a></h1>
+              <h3>durasi: 3 bulan</h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam,
+              veniam placeat, non sapiente illum quis error blanditiis repellat at
+              quia reprehenderit ipsam aliquid soluta consectetur quasi expedita
+              provident nostrum accusamus.
+            </p>
+            <div class="logo-js">
+              <img src="/public/asset/nodejs.png"   alt="">
+              <img src="/public/asset/react.png"  alt="">
+              <img src="/public/asset/nextjs.png"  alt="">
+              <img src="/public/asset/typescript.png"  alt="">
+
+            </div>
+            <div class="btn-group">
+              <a href="#" class="btn-edit">Edit post</a>
+              <a href="tugas.html" class="btn-delete" onclick="deletePost()">Delete Post</a>
+            </div>
+          </div>
+        </div>
+        <!-- 1 -->
+
+        {{!-- 2 --}}
+         <div class="content-list-item" >
+            
+            <div class="foto">
+              <img src="/public/asset/samsung.webp" alt="samsung" />
+            </div>
+  
+            <div class="blog-content">
+            <div class="title">
+              <h1 onclick="renderBlogDetail()"><a href="my-project-detail.html"  target="_blank">Mobile Apps </a></h1>
+              <h3>durasi: 3 bulan</h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam,
+              veniam placeat, non sapiente illum quis error blanditiis repellat at
+              quia reprehenderit ipsam aliquid soluta consectetur quasi expedita
+              provident nostrum accusamus.
+            </p>
+            <div class="logo-js">
+              <img src="/public/asset/nodejs.png"   alt="">
+              <img src="/public/asset/react.png"  alt="">
+              <img src="/public/asset/nextjs.png"  alt="">
+              <img src="/public/asset/typescript.png"  alt="">
+
+            </div>
+            <div class="btn-group">
+              <a href="#" class="btn-edit">Edit post</a>
+              <a href="tugas.html" class="btn-delete" onclick="deletePost()">Delete Post</a>
+            </div>
+          </div>
+        </div>
+        {{!-- 2 --}}
+        {{!-- 3 --}}
+  <div class="content-list-item" >
+            
+            <div class="foto">
+              <img src="/public/asset/samsung.webp" alt="samsung" />
+            </div>
+  
+            <div class="blog-content">
+            <div class="title">
+              <h1 onclick="renderBlogDetail()"><a href="my-project-detail.html"  target="_blank">Mobile Apps </a></h1>
+              <h3>durasi: 3 bulan</h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam,
+              veniam placeat, non sapiente illum quis error blanditiis repellat at
+              quia reprehenderit ipsam aliquid soluta consectetur quasi expedita
+              provident nostrum accusamus.
+            </p>
+            <div class="logo-js">
+              <img src="/public/asset/nodejs.png"   alt="">
+              <img src="/public/asset/react.png"  alt="">
+              <img src="/public/asset/nextjs.png"  alt="">
+              <img src="/public/asset/typescript.png"  alt="">
+
+            </div>
+            <div class="btn-group">
+              <a href="#" class="btn-edit">Edit post</a>
+              <a href="tugas.html" class="btn-delete" onclick="deletePost()">Delete Post</a>
+            </div>
+          </div>
+        </div>
+        {{!-- 3 --}}
+        {{!-- 4 --}}
+  <div class="content-list-item" >
+            
+            <div class="foto">
+              <img src="/public/asset/samsung.webp" alt="samsung" />
+            </div>
+  
+            <div class="blog-content">
+            <div class="title">
+              <h1 onclick="renderBlogDetail()"><a href="my-project-detail.html"  target="_blank">Mobile Apps </a></h1>
+              <h3>durasi: 3 bulan</h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam,
+              veniam placeat, non sapiente illum quis error blanditiis repellat at
+              quia reprehenderit ipsam aliquid soluta consectetur quasi expedita
+              provident nostrum accusamus.
+            </p>
+            <div class="logo-js">
+              <img src="/public/asset/nodejs.png"   alt="">
+              <img src="/public/asset/react.png"  alt="">
+              <img src="/public/asset/nextjs.png"  alt="">
+              <img src="/public/asset/typescript.png"  alt="">
+
+            </div>
+            <div class="btn-group">
+              <a href="#" class="btn-edit">Edit post</a>
+              <a href="tugas.html" class="btn-delete" onclick="deletePost()">Delete Post</a>
+            </div>
+          </div>
+        </div>
+        {{!-- 4 --}}
+
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+         
+</body>
+</html>

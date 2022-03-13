@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com");
+
+body {
+  margin: 0;
+  background-color: gainsboro;
+  font-family: "Oxygen", sans-serif;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  display: inline;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  display: flex;
+  background-color: whitesmoke;
+  padding-left: 100px;
+  padding-right: 100px;
+  height: 8vh;
+}
+nav img {
+  width: 50px;
+  height: 40px;
+}
+
+nav div {
+  display: flex;
+}
+nav .left-side {
+  flex: 50%;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+}
+
+nav .left-side .home {
+  font-weight: 900;
+}
+nav .right-side {
+  flex: 50%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav .right-side a {
+  background-color: black;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  width: 15%;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.background {
+  border: 2px solid;
+  background-color: white;
+  margin: 45px;
+}
+.background .container-right .profile {
+  border: 2px solid;
+  padding: 15px;
+  margin: auto;
+  margin-top: 20px;
+  width: 400px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 5px 10px 15px red;
+  height: 85%;
+}
+
+.background .container-right img {
+  width: 350px;
+  padding-left: 35px;
+}
+.background .container-right .table {
+  width: 100px;
+  border-collapse: collapse;
+}
+
+.container {
+  display: flex;
+}
+.container .content {
+  display: flex;
+  margin-top: 20px;
+}
+.content .contact {
+  flex: 30%;
+  margin-left: 15px;
+}
+.content .download {
+  flex: 70%;
+}
+.container .container-left {
+  flex: 55%;
+  /* border: 1px solid red; */
+  align-items: center;
+}
+.container .container-left .title {
+  /* border: 1px solid; */
+  padding: 15px;
+  width: 700px;
+  margin-left: 70px;
+  margin-top: 50px;
+  text-align: justify;
+}
+.container .container-left button {
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 70px;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.container .container-right {
+  flex: 45%;
+  /* border: 2px solid black; */
+}
+
+.social-media {
+  margin-left: 8%;
+  margin-top: 40px;
+}
+.social-media i {
+  font-size: 20px;
+  background-color: navy;
+  color: white;
+  border-radius: 40px;
+  padding: 10px;
+  text-align: center;
+  margin-left: 15px;
+}
+
+/* contact.html */
+form {
+  width: 500px;
+  margin: auto;
+  margin-top: 30px;
+}
+body .form {
+  background-color: gainsboro;
+}
+/* my-project */
+
+.my-project h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.form .form-container label {
+  font-size: 15px;
+}
+.form .form-container input {
+  margin-bottom: 10px;
+}
+.form .form-container #project-name {
+  width: 97%;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+}
+.form .form-container .date {
+  display: flex;
+}
+
+.form .form-container .date .end label {
+  margin-left: 25px;
+}
+.date .start {
+  flex: 50%;
+}
+.date .end {
+  flex: 50%;
+}
+.form .form-container #start-date {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+}
+.form .form-container #end-date {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.form .form-container #desc-area {
+  width: 97%;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: white;
+  text-align: justify;
+}
+
+.form .form-container .tech #tech1,
+#tech3 {
+  margin-left: 10%;
+}
+
+.form .form-container .tech #tech2 {
+  margin-left: 20%;
+}
+
+.form .form-container .tech #tech4 {
+  margin-left: 20%;
+}
+
+.input-blog-image-group img {
+  height: 30px;
+  width: 30px;
+  float: right;
+}
+
+.input-blog-image-group {
+  margin-bottom: 20px;
+  background: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+.input-blog-image-group label {
+  cursor: pointer;
+  background-color: gray;
+  width: 20%;
+  font-size: 100px;
+  font-weight: 750;
+  text-align: center;
+}
+.input-blog-image-group img {
+  margin-top: 15px;
+}
+.input-blog-image-group p {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+/* .form .form-container .input-blog-image-group .right {
+  flex: 70%;
+  float: right;
+} */
+
+.form .form-container #upload-image {
+  width: 97%;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+}
+
+.form .form-container button {
+  background-color: black;
+  padding: 10px;
+  color: white;
+  border: 1px solid;
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
+  float: right;
+  margin-right: 15px;
+  width: 20%;
+  cursor: pointer;
+}
+/* input file and image beside */
+
+body .blog {
+  background-color: white;
+  margin-top: 90px;
+}
+
+.blog h1 {
+  text-align: center;
+  position: sticky;
+}
+
+.blog .content-list {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 200px;
+  margin-top: 10px;
+}
+
+.blog .blog-content h1 a {
+  text-decoration: none;
+  color: black;
+}
+.blog .content-list .content-list-item {
+  box-shadow: 0 7px 30px 0 rgba(10, 0, 0, 0.4);
+  border-radius: 15px;
+  margin-left: 45px;
+  width: 30%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.blog .content-list-item p {
+  width: 97%;
+  margin-left: 5px;
+  text-align: justify;
+  max-width: 100%;
+}
+
+.blog .content-list .content-list-item .title h1 {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 23px;
+  margin-top: 5px;
+}
+.blog .content-list .content-list-item .title h3 {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: 300;
+}
+.blog .content-list-item .foto img {
+  height: 350px;
+  /* width: 350px; */
+  width: 95%;
+  margin-left: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.blog .content-list .content-list-item .blog-content p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+  width: 85%;
+}
+.blog .content-list .content-list-item .blog-content .logo-js img {
+  width: 45px;
+  height: 45px;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.blog .title {
+  font-size: 15px;
+  font-weight: 200;
+}
+.blog .content-list-item .btn-group {
+  width: 97%;
+  display: flex;
+}
+
+.blog .content-list-item .btn-edit {
+  flex: 50%;
+}
+.blog .content-list-item .btn-delete {
+  flex: 50%;
+}
+.blog .content-list-item .btn-group a {
+  padding: 3px;
+  background-color: black;
+  border: 1px solid;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+/* my-project-detail */
+
+.project-detail {
+  margin-left: 30px;
+}
+.project-detail h1 {
+  text-align: center;
+}
+.project-detail .content-detail {
+  display: flex;
+}
+
+.project-detail .content-detail .left {
+  flex: 30%;
+}
+
+.project-detail .content-detail .right {
+  flex: 70%;
+  margin-left: 60px;
+}
+.project-detail .content-detail .right h3 {
+  margin-left: 10px;
+}
+
+.project-detail .content-detail .left img {
+  height: 500px;
+  width: 500px;
+}
+
+.project-detail .content-detail .right img {
+  height: 50px;
+  width: 50px;
+}
+
+.project-detail .content-detail .right .duration-date,
+.month {
+  display: flex;
+}
+
+/* .project-detail .content-detail .right .month{
+  display: flex;
+} */
+.project-detail .content-detail .tech-post {
+  display: flex;
+}
+.project-detail .content-detail .right .left .tech {
+  flex: 50%;
+}
+.project-detail .content-detail .right .right .tech {
+  flex: 50%;
+}
+.project-detail .content-detail .right .tech img {
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+}
+.project-detail .content-detail .right .tech2 img {
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+}
+.project-detail .content-detail .right .tech3 img {
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+}
+.project-detail .content-detail .right .tech4 img {
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+}
+
+.project-detail .content-detail .right .tech,
+.tech2,
+.tech3,
+.tech4 {
+  display: flex;
+}
+/* .project-detail .content-detail .right .tech2{
+  margin-left: 10px;
+} */
+.project-detail p {
+  width: 90%;
+  font-size: 20px;
+  text-align: justify;
+}

@@ -1,0 +1,150 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project Add</title>
+    <link rel="stylesheet" href="/public/style.css" />
+  </head>
+  <body style="background-color: gainsboro;">
+
+    {{!-- {{#if isLogin }} --}}
+
+    {{! start }}
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand ms-5" href="/"><img
+            src="/public/asset/logodu.png"
+            alt=""
+          /></a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mt-5 mt-xxl-3">
+
+            <li class="nav-item">
+              <a
+                class="nav-link active fw-bold ms-5"
+                aria-current="page"
+                href="/"
+              >Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active ms-1 fw-normal"
+                href="/my-project-add"
+              >My Project
+              </a>
+            </li>
+          </ul>
+          <a
+            class="nav-link active btn btn-dark text-white rounded-pill"
+            href="/contact-me"
+          >Contact Me </a>
+        </div>
+
+      </div>
+    </nav>
+    {{! end }}
+
+    {{! start }}
+    <div class="form" >
+      <form action="/my-project-add" method="POST" >
+      <div class="h4 text-center ">Add My Project</div>
+
+      <div class="mb-2">
+        <label for="input-name" class="form-label">Project Name</label>
+        <input
+          type="email"
+          class="form-control text-center"
+          id="input-name"
+          name="name"
+        />
+      </div>
+
+      <div class="d-flex flex-row bd-highlight ">
+        
+      <div class="mb-2 me-2 w-50 ">
+        <label for="start-date" class="form-label">Start Date</label>
+        <input type="date" class="form-control text-center" id="start-date " name="start"/>
+      </div>
+      <div class=" mb-2 ms-2 w-50">
+        <label for="input-end" class="form-label">End Date</label>
+        <input type="date" class="form-control text-center" id="input-end" name="end"/>
+      </div>
+      </div>
+
+      <div class="mb-2 ">
+        <label for="input-desc" class="form-label">Description</label>
+        <textarea class="form-control text-center" id="input-desc" name="desc" rows="10" cols="50"></textarea>
+      </div>
+
+        <label for="input-tech" class="form-label">Technology</label> 
+      <div class="d-flex flex-row  bd-highlight mb-1">
+        
+      <div class="d-flex flex-column me-5 bd-highlight ">
+
+       <div class="form-check ms-5 ">
+        <input type="checkbox" class="form-check-input" id="check1" name="option" value="something">
+        <label class="form-check-label" for="check1">Node Js</label>
+      </div>
+
+       <div class="form-check ms-5">
+        <input type="checkbox" class="form-check-input" id="check2" name="option" value="something">
+        <label class="form-check-label" for="check2">React Js</label>
+       </div>
+
+   </div>
+
+    <div class="d-flex flex-column ms-5 bd-highlight">
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="check3" name="option" value="something">
+        <label class="form-check-label" for="check3">Next Js</label>
+       </div>
+
+       <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="check4" name="option" value="something">
+        <label class="form-check-label" for="check4">Typescript Js</label>
+       </div>
+      
+       </div>
+    </div>
+
+         <div>
+            <label>Upload Image</label>
+            <div class="input-blog-image-group">
+              <label for="input-image">
+                <p>Option</p>
+                <!-- <img src="../Day 3/asset/upload-image.png" alt="file" /> -->
+              </label>      
+              <img src="/public/asset/lampiran3-removebg-preview.png" alt="file" />
+              <input type="file" id="input-image" hidden />
+
+            </div>
+          </div>
+
+       
+
+      <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-dark mt-3 w-25 p-2 rounded-pill">Submit</button>
+      </div>
+    </div>
+      </form>
+
+    </div>
+            {{!-- {{/if }} --}}
+    {{! end }}
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script> 
+  </body>
+</html>
+
