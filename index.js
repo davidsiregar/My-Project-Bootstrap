@@ -27,11 +27,13 @@ app.post("/my-project-add", function (req, res) {
   console.log(req.body.end);
   console.log(req.body.desc);
   console.log(req.body.option);
+  console.log(req, body.image);
   console.log(req);
   res.redirect("/");
 });
-app.get("/my-project-detail", function (req, res) {
-  res.render("my-project-detail");
+app.get("/my-project-detail/:id", function (req, res) {
+  let id = req.params.idBlog;
+  res.render("my-project-detail", { id });
 });
 app.get("/contact-me", function (req, res) {
   res.render("contact-me");
