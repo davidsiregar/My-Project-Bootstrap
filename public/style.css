@@ -295,6 +295,7 @@ body .blog {
 .blog h1 {
   text-align: center;
   position: sticky;
+  margin-top: 30px;
 }
 
 .blog .content-list {
@@ -314,7 +315,7 @@ body .blog {
   border-radius: 15px;
   margin-left: 45px;
   width: 30%;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 100px;
 }
 .blog .content-list-item p {

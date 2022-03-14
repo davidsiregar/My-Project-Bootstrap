@@ -11,26 +11,71 @@
   </head>
   <body>
 
+
+ <nav class="navbar navbar-expand-xl navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand ms-5 " href="/"><img
+            src="/public/asset/logodu.png"
+            alt=""
+          /></a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mt-5 mt-xxl-3">
+
+            <li class="nav-item">
+              <a
+                class="nav-link active fw-bold ms-5"
+                aria-current="page"
+                href="/"
+              >Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active ms-1 fw-normal"
+                href="/my-project-add"
+              >Add Project
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active ms-1 fw-normal"
+                href="/my-project"
+              > Project
+              </a>
+            </li>
+
+          </ul>
+          <a
+            class="nav-link active btn btn-dark text-white rounded-pill"
+            href="/contact-me"
+          >Contact Me </a>
+        </div>
+
+      </div>
+    </nav>
+
       <div class="blog">
         <h1>My Project</h1>
        
         <div class="content-list" id="content-list">
            <!-- 1 -->
+         
+
           <div class="content-list-item" >
+             
             <div class="foto">
               <img src="/public/asset/samsung.webp" alt="samsung" />
             </div>
-  
+  {{#each Project}}
             <div class="blog-content">
             <div class="title">
-              <h1 onclick="renderBlogDetail()"><a href="/my-project-detail"  target="_blank">Mobile Apps </a></h1>
+              <h1><a href="/my-project-detail/{{@index}}"  target="_blank">{{this.title }} </a></h1>
               <h3>durasi: 3 bulan</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam,
-              veniam placeat, non sapiente illum quis error blanditiis repellat at
-              quia reprehenderit ipsam aliquid soluta consectetur quasi expedita
-              provident nostrum accusamus.
+             {{this.desc}}
             </p>
             <div class="logo-js">
               <img src="/public/asset/nodejs.png"   alt="">
@@ -40,8 +85,8 @@
 
             </div>
             <div class="btn-group">
-              <a href="#" class="btn-edit">Edit post</a>
-              <a href="/" class="btn-delete" onclick="deletePost()">Delete Post</a>
+              <a href="/edit-project" class="btn-edit">Edit post</a>
+              <a href="/delete-project/{{@index}}" class="btn-delete" >Delete Post</a>
             </div>
           </div>
         </div>
@@ -144,6 +189,7 @@
 
         </div>
       </div>
+      {{/each}}
     </div>
 
     <script src="blog.js"></script>

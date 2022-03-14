@@ -80,144 +80,46 @@
 
   <div class="blog">
         <h1>My Project</h1>
-       
+
         <div class="content-list" id="content-list">
+             {{#each projects}}
            <!-- 1 -->
           <div class="content-list-item" >
-            
+
             <div class="foto">
               <img src="/public/asset/samsung.webp" alt="samsung" />
             </div>
-  
             <div class="blog-content">
             <div class="title">
-              <h1 onclick="renderBlogDetail()"><a href="/my-project-detail"  target="_blank">Mobile Apps </a></h1>
-              <h3>durasi: 3 bulan</h3>
+              <h1><a href="/my-project-detail/{{@index}}"  target="_blank">{{ this.name }}</a></h1>
+              <h3>{{this.author}}</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam,
-              veniam placeat, non sapiente illum quis error blanditiis repellat at
-              quia reprehenderit ipsam aliquid soluta consectetur quasi expedita
-              provident nostrum accusamus.
+              {{this.desc}} 
             </p>
+
             <div class="logo-js">
               <img src="/public/asset/nodejs.png"   alt="">
               <img src="/public/asset/react.png"  alt="">
               <img src="/public/asset/nextjs.png"  alt="">
               <img src="/public/asset/typescript.png"  alt="">
+            </div>
 
-            </div>
             <div class="btn-group">
-              <a href="#" class="btn-edit">Edit post</a>
-              <a href="tugas.html" class="btn-delete" onclick="deletePost()">Delete Post</a>
+              <a href="/edit-project" class="btn-edit">Edit post</a>
+              <a href="/delete-project/{{ @index }}" class="btn-delete" >Delete Post</a>
             </div>
+
           </div>
         </div>
         <!-- 1 -->
-
-        {{!-- 2 --}}
-         <div class="content-list-item" >
-            
-            <div class="foto">
-              <img src="/public/asset/samsung.webp" alt="samsung" />
-            </div>
-  
-            <div class="blog-content">
-            <div class="title">
-              <h1 onclick="renderBlogDetail()"><a href="my-project-detail.html"  target="_blank">Mobile Apps </a></h1>
-              <h3>durasi: 3 bulan</h3>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam,
-              veniam placeat, non sapiente illum quis error blanditiis repellat at
-              quia reprehenderit ipsam aliquid soluta consectetur quasi expedita
-              provident nostrum accusamus.
-            </p>
-            <div class="logo-js">
-              <img src="/public/asset/nodejs.png"   alt="">
-              <img src="/public/asset/react.png"  alt="">
-              <img src="/public/asset/nextjs.png"  alt="">
-              <img src="/public/asset/typescript.png"  alt="">
-
-            </div>
-            <div class="btn-group">
-              <a href="#" class="btn-edit">Edit post</a>
-              <a href="tugas.html" class="btn-delete" onclick="deletePost()">Delete Post</a>
-            </div>
-          </div>
-        </div>
-        {{!-- 2 --}}
-        {{!-- 3 --}}
-  <div class="content-list-item" >
-            
-            <div class="foto">
-              <img src="/public/asset/samsung.webp" alt="samsung" />
-            </div>
-  
-            <div class="blog-content">
-            <div class="title">
-              <h1 onclick="renderBlogDetail()"><a href="my-project-detail.html"  target="_blank">Mobile Apps </a></h1>
-              <h3>durasi: 3 bulan</h3>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam,
-              veniam placeat, non sapiente illum quis error blanditiis repellat at
-              quia reprehenderit ipsam aliquid soluta consectetur quasi expedita
-              provident nostrum accusamus.
-            </p>
-            <div class="logo-js">
-              <img src="/public/asset/nodejs.png"   alt="">
-              <img src="/public/asset/react.png"  alt="">
-              <img src="/public/asset/nextjs.png"  alt="">
-              <img src="/public/asset/typescript.png"  alt="">
-
-            </div>
-            <div class="btn-group">
-              <a href="#" class="btn-edit">Edit post</a>
-              <a href="tugas.html" class="btn-delete" onclick="deletePost()">Delete Post</a>
-            </div>
-          </div>
-        </div>
-        {{!-- 3 --}}
-        {{!-- 4 --}}
-  <div class="content-list-item" >
-            
-            <div class="foto">
-              <img src="/public/asset/samsung.webp" alt="samsung" />
-            </div>
-  
-            <div class="blog-content">
-            <div class="title">
-              <h1 onclick="renderBlogDetail()"><a href="my-project-detail.html"  target="_blank">Mobile Apps </a></h1>
-              <h3>durasi: 3 bulan</h3>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam,
-              veniam placeat, non sapiente illum quis error blanditiis repellat at
-              quia reprehenderit ipsam aliquid soluta consectetur quasi expedita
-              provident nostrum accusamus.
-            </p>
-            <div class="logo-js">
-              <img src="/public/asset/nodejs.png"   alt="">
-              <img src="/public/asset/react.png"  alt="">
-              <img src="/public/asset/nextjs.png"  alt="">
-              <img src="/public/asset/typescript.png"  alt="">
-
-            </div>
-            <div class="btn-group">
-              <a href="#" class="btn-edit">Edit post</a>
-              <a href="tugas.html" class="btn-delete" onclick="deletePost()">Delete Post</a>
-            </div>
-          </div>
-        </div>
-        {{!-- 4 --}}
-
         </div>
 
         </div>
+         {{/each}}
       </div>
+     
     </div>
 
-         
 </body>
 </html>
